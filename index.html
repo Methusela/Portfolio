@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methusela Njoroge | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #007bff;
+            --accent-orange: #ff7f32;
+        }
+        .hero-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-orange));
+            color: white;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .profile-pic {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid white;
+            animation: zoomIn 1.3s ease-in-out;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.7); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .card-title {
+            color: var(--accent-orange);
+            font-weight: bold;
+        }
+        .btn-outline-primary:hover {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+        footer {
+            background: var(--primary-blue);
+        }
+    </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Methusela Njoroge</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="https://via.placeholder.com/250/ffffff/007bff?text=Methusela" alt="Profile Picture" class="profile-pic shadow-lg">
+                </div>
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Hi, I'm Methusela Njoroge</h1>
+                    <p class="lead">ICT Trainer • Web Developer • IT Support Specialist</p>
+                    <a href="#portfolio" class="btn btn-primary btn-lg mt-3">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" style="color: var(--primary-blue);">✨ My Projects</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/007bff/ffffff?text=Student+Desk" class="card-img-top" alt="Student Desk Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-journal-text"></i> Student Desk</h5>
+                            <p class="card-text">A modern, mobile-first e-learning platform designed for Kenyan coastal institutions. Helps teachers manage courses, assignments, attendance, and student performance efficiently. Built with a focus on accessibility and smooth communication.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/ff7f32/ffffff?text=Jiajiri+Hub" class="card-img-top" alt="Jiajiri Hub Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-people"></i> Jiajiri Hub</h5>
+                            <p class="card-text">A job-matching platform connecting skilled workers to customers based on location, ratings, and specialization. Features secure in-app payment tracking, real-time job updates, and a clean, user-friendly marketplace interface.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/007bff/ffffff?text=Python+Course" class="card-img-top" alt="Python Course Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-code-slash"></i> Python for Web & Data</h5>
+                            <p class="card-text">A beginner-friendly Python course I designed, covering essential programming, Flask web apps, and data analysis using Pandas. Includes hands-on mini-projects, assessments, and real-world problem-solving practice.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold" style="color: var(--accent-orange);">Get In Touch</h2>
+            <p class="lead">Feel free to reach out — I'm open to opportunities and collaborations.</p>
+            <a href="mailto:methuselanjoroge@gmail.com" class="btn btn-primary btn-lg">Email Me</a>
+        </div>
+    </section>
+
+    <footer class="text-white text-center py-3">
+        <p class="mb-0">© 2025 Methusela Njoroge. Built with Bootstrap.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
